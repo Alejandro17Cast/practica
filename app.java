@@ -23,7 +23,7 @@ public class app {
         return dif; 
     }
     public static int resta1 (int mayor2, int mayor1){
-        int result1= mayor1-mayor2; 
+        int result1= mayor2-mayor1; 
         return result1; 
     }
     public static int suma1 (int menor1, int menor3){
@@ -38,13 +38,13 @@ public class app {
         do {
  
              try {
-                 System.out.println("Ingrese tres numeros enteros diferentes");
+                 System.out.println("\t\t\tIngrese tres numeros enteros diferentes");
                  num1 = leer.nextInt();
                  num2 = leer.nextInt();
                  num3 = leer.nextInt();
              } catch (Exception e) {
                  System.out.println(e);
-                 System.out.println("Ingrese valores correctos");
+                 System.out.println("\t\t Ingrese valores correctos");
                  leer.nextLine();
              }
  
@@ -66,19 +66,22 @@ public class app {
            //UTILICE EL IF Y ELSE PARA MOSTRAR LOS RESULTADOS DE LAS OPERACIONES EFECTUADAS 
 
            if (mayor1 == mayor2) {
+            System.out.println("\t\t Según los datos agregados");
             System.out.println("El numero mayor es: "+mayor1);
             System.out.println("La Suma de "+menor1+ " + "+menor2+" es: "+suma(menor1, menor2) );
             System.out.println("La diferencia entre: "+mayor1+" y "+mayor3 +" es: "+resta(mayor3, mayor1));
              }else{
                 if(mayor2 == mayor3) {
+                    System.out.println("\t\t Según los datos agregados");
                     System.out.println("El numero mayor es: "+mayor2);
                     System.out.println("La Suma de "+menor2+ " + "+menor3+" es: "+adicion(menor2, menor3) );
                     System.out.println("La diferencia entre: "+mayor2+" y "+mayor1 +" es: "+diferencia(mayor2, mayor1));
              }else{
                 if(mayor1 == mayor3) {
+                    System.out.println("\t\t Según los datos agregados");
                     System.out.println("El numero mayor es: "+mayor3);
                     System.out.println("La Suma de "+menor1+ " + "+menor3+" es: "+suma1(menor1, menor3) );
-                    System.out.println("La diferencia entre: "+mayor1+" y "+mayor2+" es: "+resta1(mayor2, mayor1));
+                    System.out.println("La diferencia entre: "+mayor2+" y "+mayor1+" es: "+resta1(mayor2, mayor1));
              }
             }
          
